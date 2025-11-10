@@ -39,9 +39,7 @@ Lá você encontrará o passo a passo completo para executar o **backend** (API 
 
 ---
 
-## 📚 Referência Sugerida
-
-Se este trabalho for utilizado em pesquisas ou projetos, cite da seguinte forma:
+## 📚 Referência 
 
 > **SANTOS, Jean Lucas Serpa.** *UniTrans: Sistema de Gerenciamento de Transporte Universitário.*  
 > Trabalho de Conclusão de Curso (Bacharelado em Sistemas de Informação) — Centro Universitário Avantis – UNIAVAN, 2025.
