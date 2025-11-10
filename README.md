@@ -34,15 +34,14 @@ O repositório inclui o **código-fonte completo** do sistema, **materiais de ap
 
 ## ⚙️ Como Utilizar o Código
 
-1. Acesse a pasta `Código-Fonte`.  
-2. Consulte o arquivo `README` interno (se houver) para instruções de execução.  
-3. Caso o projeto utilize dependências, verifique o arquivo `package.json` (Node.js) ou instruções específicas de instalação.  
+Todas as instruções detalhadas sobre a instalação, execução e configuração do projeto estão disponíveis dentro da pasta **`Código-Fonte`**, no arquivo `README.md`.  
+Lá você encontrará o passo a passo completo para executar o **backend** (API Node.js) e o **frontend** (interface web React) do sistema **UniTrans**.
 
 ---
 
-## 📚 Referência 
+## 📚 Referência Sugerida
 
-
+Se este trabalho for utilizado em pesquisas ou projetos, cite da seguinte forma:
 
 > **SANTOS, Jean Lucas Serpa.** *UniTrans: Sistema de Gerenciamento de Transporte Universitário.*  
 > Trabalho de Conclusão de Curso (Bacharelado em Sistemas de Informação) — Centro Universitário Avantis – UNIAVAN, 2025.
