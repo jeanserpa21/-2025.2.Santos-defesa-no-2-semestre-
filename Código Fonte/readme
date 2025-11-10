@@ -1,1 +1,104 @@
 
+# 💻 Código-Fonte – UniTrans
+
+## 🧩 Estrutura do Projeto
+
+O código-fonte do sistema **UniTrans** está dividido em duas partes principais: **backend** (servidor e API) e **frontend** (interface web).  
+A seguir está a estrutura geral das pastas:
+
+Código-Fonte/
+├── backend/ # API e regras de negócio (Node.js + Express + Prisma)
+│ ├── prisma/ # Configuração do banco de dados e migrations
+│ ├── src/
+│ │ ├── controllers/ # Lógica de controle das rotas
+│ │ ├── services/ # Regras de negócio e integração com o banco
+│ │ ├── routes/ # Definição das rotas da API
+│ │ ├── middlewares/ # Autenticação, logs, validações, etc.
+│ │ └── utils/ # Funções auxiliares e utilitários
+│ ├── .env.example # Variáveis de ambiente
+│ ├── package.json # Dependências e scripts
+│ ├── server.js # Ponto de inicialização da API
+│ └── README.md
+│
+└── frontend/ # Interface web (React + Vite + TailwindCSS)
+├── src/
+│ ├── components/ # Componentes reutilizáveis da interface
+│ ├── pages/ # Telas do sistema (login, dashboard, etc.)
+│ ├── services/ # Comunicação com a API (fetch/axios)
+│ ├── contexts/ # Contexto global (autenticação, sessão, etc.)
+│ └── assets/ # Imagens, ícones e estilos
+├── public/
+├── package.json
+└── vite.config.js
+
+markdown
+Copiar código
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+### 🔙 **Backend**
+- **Node.js** (v18+)
+- **Express.js** — framework para rotas e middlewares
+- **Prisma ORM** — acesso ao banco de dados PostgreSQL
+- **PostgreSQL** — banco de dados relacional
+- **JWT (JSON Web Token)** — autenticação
+- **bcrypt** — criptografia de senhas
+- **dotenv** — variáveis de ambiente
+- **Nodemon** — ambiente de desenvolvimento
+
+### 🖥️ **Frontend**
+- **React 19** — framework para interface do usuário
+- **Vite** — ferramenta de build e servidor de desenvolvimento
+- **React Router** — navegação entre páginas
+- **Axios** — consumo de API
+- **TailwindCSS** — estilização
+- **Lucide React** — ícones
+- **Framer Motion** — animações leves
+- **Recharts** — gráficos dinâmicos
+- **React QR Scanner** — leitura de QR Codes
+
+---
+
+## 🚀 Como Executar o Projeto Localmente
+
+### 🔹 **1. Clonar o repositório**
+```bash
+git clone https://github.com/jeanserpa21/Trabalho-de-Conclus-o-de-Curso-TCC-.git
+cd Trabalho-de-Conclus-o-de-Curso-TCC-/Código-Fonte
+🔹 2. Configurar o Backend
+bash
+Copiar código
+cd backend
+npm install
+Crie o arquivo .env com base no .env.example e configure as variáveis do PostgreSQL:
+
+ini
+Copiar código
+DATABASE_URL="postgresql://usuario:senha@localhost:5432/unitrans"
+JWT_SECRET="chave-secreta"
+PORT=3001
+Rodar o servidor:
+
+bash
+Copiar código
+npm run dev
+A API será iniciada em http://localhost:3001
+
+🔹 3. Configurar o Frontend
+bash
+Copiar código
+cd ../frontend
+npm install
+npm run dev
+Acesse o sistema em http://localhost:5173
+
+🧠 Observações
+O backend e o frontend precisam estar rodando simultaneamente.
+
+As rotas de API estão centralizadas em backend/src/routes/.
+
+O contexto de autenticação (login e controle de sessão) está localizado em frontend/src/contexts/AuthContext.jsx.
+
+Todas as chamadas HTTP utilizam serviços em frontend/src/services/.
