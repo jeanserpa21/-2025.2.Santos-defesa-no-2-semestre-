@@ -16,7 +16,16 @@ Curso de **Sistemas de Informação**
 ## 🗂️ Estrutura do Repositório
 
 ---
+A organização deste repositório foi pensada para separar claramente o código-fonte do sistema UniTrans dos materiais acadêmicos e de apoio utilizados no Trabalho de Conclusão de Curso.
 
+```text
+/
+├── Apresentação/
+├── Código Fonte/
+├── Material de Apoio/
+├── Pesquisa/
+├── Referência Bibliografica/
+└── README.md
 ---
 
 ## 🧩 Descrição
