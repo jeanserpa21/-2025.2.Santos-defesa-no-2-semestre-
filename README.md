@@ -19,7 +19,7 @@ Curso de **Sistemas de Informação**
 A organização deste repositório foi pensada para separar claramente o código-fonte do sistema UniTrans dos materiais acadêmicos e de apoio utilizados no Trabalho de Conclusão de Curso.
 
 
-/
+
 ├── Apresentação/
 ├── Código Fonte/
 ├── Material de Apoio/
